@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom"
+import photo from "../assets/logo_rouge_desktop.jpg"
 
 function Root (props) {
   return <>
     <header>
-      <img src="" alt="" />
+      <img src={photo} alt="logo rouge du site" />
       <nav>
         <NavLink to="/Home">Accueil</NavLink>
         <NavLink to="/APropos">A Propos</NavLink>
@@ -13,7 +14,7 @@ function Root (props) {
     {props.children}
     </main>
     <footer>
-        <img src="" alt="" />
+        <img src={photo} alt="logo rouge du site" />
         <p></p>
     </footer>
   </>
