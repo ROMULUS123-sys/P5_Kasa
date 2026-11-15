@@ -1,4 +1,4 @@
-import '../styles/FicheLogement.css'
+import '../styles/FicheLogement.scss'
 import { useParams } from 'react-router-dom'
 
 

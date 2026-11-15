@@ -1,4 +1,4 @@
-import '../styles/Error404.css'
+import '../styles/Error404.scss'
 
 function PageError () {
     return <div>

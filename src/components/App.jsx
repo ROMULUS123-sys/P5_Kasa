@@ -1,5 +1,5 @@
 import { Children, useState } from 'react'
-import '../styles/App.css'
+import '../styles/App.scss'
 import Chemin from "./Routeur.jsx"
 
 
