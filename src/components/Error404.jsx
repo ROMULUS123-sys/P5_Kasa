@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 
 
 function PageError () {
-    return <section>
-        <h1>404;</h1>
-        <p>Oups! La page que vous demandez n'existe pas.</p>
-        <Link to="/Home">Retourner sur la page d'accueil</Link>
+    return <section className='erreur'>
+        <h1 className='erreur__title'>404</h1>
+        <p className='erreur__paragraphe'>Oups! La page que vous demandez n'existe pas.</p>
+        <Link to="/Home" className='erreur__link'>Retourner sur la page d'accueil</Link>
     </section>
 }
 
