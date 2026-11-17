@@ -4,6 +4,12 @@ import photoFooter from "../assets/logo_noir_et_blanc_desktop.jpg"
 import '../styles/Layout.scss'
 
 function Root (props) {
+    
+//state
+
+//comportements
+
+//affichage
   return <>
     <header className="navbar">
       <img className="navbar__logo" src={photoHeader} alt="logo rouge du site" />

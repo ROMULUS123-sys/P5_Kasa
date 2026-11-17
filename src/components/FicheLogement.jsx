@@ -6,6 +6,12 @@ import Star from './Star'
 
 
 function AffichageLogement () {
+
+//state
+
+//comportements
+
+//affichage
     return <>
         <div>
             <div>

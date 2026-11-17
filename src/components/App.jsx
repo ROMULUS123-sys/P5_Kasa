@@ -5,6 +5,12 @@ import Chemin from "./Routeur.jsx"
 
 
 function App() {
+  
+//state
+
+//comportements
+
+//affichage
   return <>
      <Chemin/>
   </>
