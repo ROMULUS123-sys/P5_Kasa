@@ -1,3 +1,5 @@
+import '../styles/Banner.scss'
+
 function Banner({ title, cover, description}){
 
 //state

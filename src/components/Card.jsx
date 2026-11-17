@@ -1,3 +1,5 @@
+import '../styles/Card.scss'
+
 function Card({title, cover}) {
 
 //state

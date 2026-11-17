@@ -18,7 +18,7 @@ function Root (props) {
         <NavLink to="/APropos" className="navbar__link">A Propos</NavLink>
       </nav>
     </header>
-    <main>
+    <main className="main">
     {props.children}
     </main>
     <footer className="footer">

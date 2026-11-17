@@ -1,9 +1,10 @@
 import Card from "./Card.jsx"
 import logements from "../../logements.json"
+import '../styles/ListCards.scss'
 
 function ListCards() {
     return(
-        <div>
+        <div className="list-cards">
             {logements.map((logement) => (
                 <Card
                 key = {logement.id}

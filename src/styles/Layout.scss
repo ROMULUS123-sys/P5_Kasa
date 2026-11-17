@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
+    padding: 43px 100px 0px;
     background-color: colors.$secondary;
 
     &__logo {
@@ -26,6 +26,10 @@
             text-decoration: underline;
         }
     }
+}
+
+.main{
+    padding: 43px 100px 50px;
 }
 
 .footer {
