@@ -11,26 +11,25 @@ function AffichageAPropos () {
 //comportements
 
 //affichage
-    return<section>
+    return<section className='aPropos'>
         <Banner cover={photoAPropos} description="paysage de montagnes avec des arbres en premier plan et des pics de montagnes en fond"/>
-        <div>
-            <Collapse title="Fiabilité" text="Les annonces postées sur Kasa garantissent une
+        <Collapse title="Fiabilité" text="Les annonces postées sur Kasa garantissent une
                             fiabilité totale. Les photos sont conformes aux
                             logements, et toutes les informations sont
                             régulièrement vérifiées par nos équipes."
                             img={chevron}/>
-            <Collapse title="Respect" text="La bienveillance fait partie des valeurs
+        <Collapse title="Respect" text="La bienveillance fait partie des valeurs
                             fondatrices de Kasa. Tout comportement
                             discriminatoire ou de perturbation du voisinage
                             entraînera une exclusion de notre plateforme."
                             img={chevron}/>
-            <Collapse title="Service" text="La qualité du service est au cœur de notre
+        <Collapse title="Service" text="La qualité du service est au cœur de notre
                             engagement chez Kasa. Nous veillons à ce que
                             chaque interaction, que ce soit avec nos hôtes ou
                             nos locataires, soit empreinte de respect et de
                             bienveillance."
                             img={chevron}/>
-            <Collapse title="Sécurité" text="La sécurité est la priorité de Kasa. Aussi bien pour
+        <Collapse title="Sécurité" text="La sécurité est la priorité de Kasa. Aussi bien pour
                             nos hôtes que pour les voyageurs, chaque
                             logement correspond aux critères de sécurité
                             établis par nos services. En laissant une note
@@ -40,7 +39,6 @@ function AffichageAPropos () {
                             ateliers sur la sécurité domestique pour nos
                             hotes."
                             img={chevron}/>
-        </div>
     </section>
 }
 

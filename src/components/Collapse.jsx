@@ -4,18 +4,22 @@ import { useState } from "react";
 function Collapse({ title, text, img}) {
 
 //state
-const [open , setOpen] = useState()
+const [close , setclose] = useState(true)
 
 //comportements
 
+const handlechange = () => {
+    setclose(!close)
+}
+
 //affichage
     return (
-    <div className="collapse">
+    <div className={close ? "collapse" : "collapse collapse--open"}>
         <div className="collapse__visible">
             <h2 className="collapse__title">{title}</h2>
-            <button className="collapse__button"><img src={img} alt="" /></button>
+            <button className="collapse__button" onClick={handlechange} ><img src={img} alt="icone de fleche vers le bas" /></button>
         </div>
-        <p className="collapse__paragraphe">{text}</p>
+        <p className="collapse__paragraphe ">{text}</p>
     </div>
 )
 }

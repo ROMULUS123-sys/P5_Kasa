@@ -1,0 +1,54 @@
+@use "colors";
+
+.collapse {
+    &__visible {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: colors.$primary;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        color: colors.$secondary;
+    }
+
+    &__button {
+        display: flex;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        img {
+            transition: transform 0.3s ease;
+        }
+    }
+
+    &__paragraphe {
+        max-height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0 20px;
+        border-radius: 0 0 5px 5px;
+        background-color: colors.$light-grey;
+        font-size: 24px;
+        color: colors.$black;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    &--open &__button img {
+        transform: rotate(180deg);
+    }
+
+    &--open &__paragraphe {
+        max-height: 500px;
+        padding: 30px 20px 20px;
+    }
+}

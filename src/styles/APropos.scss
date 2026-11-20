@@ -1,0 +1,10 @@
+.aPropos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .collapse {
+        width: 80%;
+        align-self: center;
+    }
+}
