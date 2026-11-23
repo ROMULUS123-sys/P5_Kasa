@@ -1,4 +1,6 @@
-function Tag(){
+import '../styles/Tag.scss'
+
+function Tag({ name }){
 
 //state
 
@@ -6,7 +8,7 @@ function Tag(){
 
 //affichage
 
-    return <h1>d</h1>
+    return <li className="tag">{name}</li>
 }
 
 export default Tag

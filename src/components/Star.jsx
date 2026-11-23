@@ -1,4 +1,8 @@
-function Star(){
+import '../styles/Star.scss'
+import starActive from '../assets/star-active.svg'
+import starInactive from '../assets/star-inactive.svg'
+
+function Star({ grey }){
 
 //state
 
@@ -6,7 +10,7 @@ function Star(){
 
 //affichage
 
-    return <h1>p</h1>
+    return <img className="star" src={grey ? starInactive : starActive} alt="" />
 }
 
 export default Star
