@@ -1,6 +1,7 @@
 import '../styles/Card.scss'
+import { Link } from "react-router-dom"
 
-function Card({title, cover}) {
+function Card({id, title, cover}) {
 
 //state
 
@@ -8,10 +9,10 @@ function Card({title, cover}) {
 
 //affichage
     return (
-    <div className="card">
+    <Link to={`/FicheLogement/${id}`} className="card">
         <img className="card__img" src={cover} alt={title} />
         <h2 className="card__title">{title}</h2>
-    </div>
+    </Link>
     ) 
 }
 

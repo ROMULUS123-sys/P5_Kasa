@@ -1,6 +1,7 @@
 @use "colors";
 
 .card {
+    display: block;
     position: relative;
     aspect-ratio: 1;
     border-radius: 10px;
