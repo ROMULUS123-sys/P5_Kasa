@@ -4,6 +4,7 @@ import logements from "../../logements.json"
 import Collapse from './Collapse'
 import ListTags from './ListTags'
 import ListStars from './ListStars'
+import Carrousel from './Carrousel'
 import chevron from "../assets/chevron_under.svg"
 
 
@@ -21,6 +22,7 @@ const logement = logements.find((logement) => logement.id === id)
     }
 
     return <section className="logement">
+        <Carrousel pictures={logement.pictures} title={logement.title}/>
         <div className="logement__infos">
             <div className="logement__main">
                 <h1 className="logement__title">{logement.title}</h1>
