@@ -1,4 +1,13 @@
+@use "breakpoints" as bp;
+
 .star {
     width: 36px;
     height: 36px;
+}
+
+@include bp.mobile {
+    .star {
+        width: 20px;
+        height: 20px;
+    }
 }

@@ -12,7 +12,12 @@ function Affichage () {
 //affichage
 
     return <section>
-        <Banner title="Chez vous, partout et ailleurs" description="crique avec des sapins sur les montagnes et de la brume" cover={photoAccueil}/>
+        <Banner
+            title={<>
+                <span className="banner__line">Chez vous, </span>
+                <span className="banner__line">partout et ailleurs</span>
+            </>}
+            description="crique avec des sapins sur les montagnes et de la brume" cover={photoAccueil}/>
         <ListCards/>
     </section>
 }

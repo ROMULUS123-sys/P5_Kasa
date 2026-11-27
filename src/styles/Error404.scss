@@ -1,4 +1,5 @@
 @use "colors";
+@use "breakpoints" as bp;
 
 .erreur {
     display: flex;
@@ -27,5 +28,25 @@
         font-size: 18px;
         color: colors.$black;
         text-decoration: underline;
+    }
+}
+
+@include bp.mobile {
+    .erreur {
+        padding: 100px 20px 120px;
+
+        &__title {
+            font-size: 96px;
+        }
+
+        &__paragraphe {
+            max-width: 270px;
+            margin: 120px 0;
+            font-size: 18px;
+        }
+
+        &__link {
+            font-size: 14px;
+        }
     }
 }

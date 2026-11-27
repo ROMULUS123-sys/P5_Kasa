@@ -1,3 +1,5 @@
+@use "breakpoints" as bp;
+
 .aPropos {
     display: flex;
     flex-direction: column;
@@ -6,5 +8,15 @@
     .collapse {
         width: 80%;
         align-self: center;
+    }
+}
+
+@include bp.mobile {
+    .aPropos {
+        gap: 20px;
+
+        .collapse {
+            width: 100%;
+        }
     }
 }

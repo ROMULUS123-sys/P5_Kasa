@@ -1,4 +1,5 @@
 @use "colors";
+@use "breakpoints" as bp;
 
 .collapse {
     &__visible {
@@ -50,5 +51,29 @@
     &--open &__paragraphe {
         max-height: 500px;
         padding: 30px 20px 20px;
+    }
+}
+
+@include bp.mobile {
+    .collapse {
+        &__visible {
+            padding: 6px 10px;
+        }
+
+        &__title {
+            font-size: 13px;
+        }
+
+        &__button img {
+            width: 16px;
+        }
+
+        &__paragraphe {
+            font-size: 12px;
+        }
+
+        &--open &__paragraphe {
+            padding: 20px 10px 10px;
+        }
     }
 }

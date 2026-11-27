@@ -1,4 +1,5 @@
 @use "colors";
+@use "breakpoints" as bp;
 
 .navbar {
     display: flex;
@@ -29,6 +30,7 @@
 }
 
 .main{
+    flex: 1;
     padding: 43px 100px 50px;
 }
 
@@ -49,5 +51,38 @@
         font-size: 24px;
         color: colors.$secondary;
         text-align: center;
+    }
+}
+
+@include bp.mobile {
+    .navbar {
+        padding: 20px 20px 0;
+
+        &__logo {
+            height: 47px;
+        }
+
+        &__links {
+            gap: 26px;
+        }
+
+        &__link {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    .main {
+        padding: 20px 20px 30px;
+    }
+
+    .footer {
+        gap: 20px;
+        padding: 66px 0 62px;
+
+        &__text {
+            max-width: 130px;
+            font-size: 12px;
+        }
     }
 }

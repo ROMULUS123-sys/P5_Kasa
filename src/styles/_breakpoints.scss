@@ -1,0 +1,9 @@
+// Points de rupture du site
+$mobile: 768px;
+
+// 768px 
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}

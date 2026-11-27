@@ -1,4 +1,5 @@
 @use "colors";
+@use "breakpoints" as bp;
 
 .carrousel {
     position: relative;
@@ -38,5 +39,29 @@
         font-size: 18px;
         font-weight: 500;
         color: colors.$secondary;
+    }
+}
+
+@include bp.mobile {
+    .carrousel {
+        height: 255px;
+        border-radius: 10px;
+
+        &__icon {
+            left: 6px;
+
+            img {
+                height: 20px;
+            }
+
+            &--right {
+                left: auto;
+                right: 6px;
+            }
+        }
+
+        &__text {
+            display: none;
+        }
     }
 }
