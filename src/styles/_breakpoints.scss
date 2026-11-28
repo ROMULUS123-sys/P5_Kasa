@@ -1,5 +1,13 @@
 // Points de rupture du site
+$tablet: 1024px;
 $mobile: 768px;
+
+// 1024px 
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
 
 // 768px 
 @mixin mobile {
