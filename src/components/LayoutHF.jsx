@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import photoHeader from "../assets/logo_rouge_desktop.jpg"
-import photoFooter from "../assets/logo_noir_et_blanc_desktop.jpg"
+import photoFooter from "../assets/logo_noir_et_blanc_desktop.png"
 import '../styles/Layout.scss'
 
 function Root (props) {
